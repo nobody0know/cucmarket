@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
     <div class="nav_head">
         {%if request.session.username|default:'' != ''%}
             <P>欢迎您，{{ request.session.username }}</P>
@@ -26,7 +27,6 @@
         </div>
     </div>
     <div class="title">
-        <img src="/static/img/title.png">
         <div class="second_title">
             <div class="find">
                 <input type="text" class="form-control" id="search" >
@@ -34,8 +34,13 @@
                     <span class="glyphicon glyphicon-search"></span>
                 </a>
                 <button type="button" class="btn btn-warning"><a href="/release_goods">发布闲置</a></button>
+								
             </div>
-        </div>      
+        </div>   
+				<img src="/static/img/minecraft.jpg">   
+				<div class = "villager">
+					<img src="static/img/Plains_Villager_Base.webp">
+				</div>
     </div>
     <!-- 返回最上开始 -->
     <div class="back_to_top">
@@ -214,19 +219,15 @@
     <div class="foot">
         <img src="/static/img/title2.png">
         <div>
-                 <p>来二手技大，你的闲置能换钱！</p>
+                 <p>来二手技大，闲置能换绿宝石！</p>
         <span>深圳技术大学校园闲置物品交换平台</span>
         </div>
-
+				<div class = "villager2">
+					<img src="static/img/Wandering_Trader_JE1_BE1.webp">
+				</div>
     </div>
     <address>
-        Written by <a href="#">Lww&Gkz&Ysp&Lzx</a>.<br>
-            Visit us at:<br>
-            Shenzhen Technology University<br>
-            No：202001010126<br>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp202008010203<br>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp202002010227<br>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp202001010121<br>
+        Written by <a href="#">赖香健&利子旺</a>.<br>
     </address>
 
     <script src="/static/js/jquery-3.3.1.min.js"></script>
